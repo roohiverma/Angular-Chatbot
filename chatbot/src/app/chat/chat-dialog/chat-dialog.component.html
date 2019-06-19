@@ -1,4 +1,4 @@
-<h1>Angular Bot</h1>
+<h1>Bot Ai</h1>
 <div class="container">
 
 <ng-container *ngFor="let message of messages | async">
@@ -12,9 +12,10 @@
 </div>
 
 
-<label for="nameField">Your Message</label>
+<label for="nameField">Type Here</label>
 
 
 <input [(ngModel)]="formValue" (keyup.enter)="sendMessage()" type="text">
+<br>
 
 <button (click)="sendMessage()">Send</button>
